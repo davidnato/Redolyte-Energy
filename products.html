@@ -29,8 +29,12 @@
                     <li><a href="sustainability.html">Sustainability</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-                </ul>
-            </nav>
+                    <div class="theme-toggle">
+                        <button id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div></nav></ul>
+
             <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -41,6 +45,44 @@
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
+    <!-- Main Content --><section class="gallery-section">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/batter-1.png" alt="Vanadium Redox-Flow Battery" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span>View Larger</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/installation-1.jpeg" alt="Battery Installation" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span>View Larger</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/solar-intergration.jpg" alt="Solar Integration" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span>View Larger</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/battery-components.ppm" alt="Battery Components" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span>View Larger</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for enlarged images -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+</section>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">

@@ -243,3 +243,28 @@ function updateThemeIcon(theme) {
         themeIcon.classList.add('fa-moon');
     }
 }
+
+// Gallery Modal
+const galleryItems = document.querySelectorAll('.gallery-item');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const modalCaption = document.getElementById('modalCaption');
+const modalClose = document.querySelector('.modal-close');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = item.querySelector('.gallery-img').src;
+        modalCaption.innerHTML = item.querySelector('.gallery-img').alt;
+    });
+});
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
