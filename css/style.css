@@ -606,6 +606,9 @@ section {
 
 .gallery-section {
     background-color: var(--light-bg);
+    margin-top: 2em;
+    height: 100vh;
+    flex: 1;
 }
 
 .gallery-grid {
@@ -620,6 +623,7 @@ section {
     overflow: hidden;
     border-radius: var(--border-radius);
     cursor: pointer;
+    padding: 0 2em 0 2em;
 }
 
 .gallery-img {
@@ -652,8 +656,8 @@ section {
     transform: scale(1.1);
 }
 
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
+.gallery-item:hover {
+    box-shadow: var(--box-shadow);
 }
 
 /* Modal Styles */
@@ -693,4 +697,184 @@ section {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+/* Our Story Section */
+.story-section {
+    background-color: var(--white);
+    text-align: center;
+    margin-top: 2em;
+}
+
+.story-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission-vision-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-box, .vision-box {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.mission-box h3, .vision-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.value-prop {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+.value-prop h3 {
+    color: var(--primary-color);
+}
+
+.product-details {
+    padding: 15px;
+    background: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
+
+.product-details h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-details ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-details:hover {
+    background: #0a58ca;
+}
+/* Sustainability Section Styles */
+.sustainability-section {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.sustainability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.sustainability-card {
+    background-color: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.sustainability-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    margin-bottom: 20px;
+}
+
+.card-icon i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.sustainability-card h3 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.impact-list {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.impact-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.impact-list li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Case Studies Section Styles */
+.case-studies-section {
+    background-color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.case-study-card {
+    background-color: var(--light-bg);
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.case-study-card:hover {
+    transform: translateY(-10px);
+}
+
+.case-study-icon {
+    margin-bottom: 20px;
+}
+
+.case-study-icon i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.case-study-card h3 {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.case-study-card p {
+    margin-bottom: 25px;
 }

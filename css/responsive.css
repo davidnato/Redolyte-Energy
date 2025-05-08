@@ -77,3 +77,80 @@
         padding: 60px 0;
     }
 }
+/* Fix for gallery overlapping footer */
+.gallery-section {
+    background-color: var(--light-bg);
+    margin-top: 2em;
+    height: auto; /* Change from 100vh to auto */
+    min-height: 400px; /* Set a minimum height if desired */
+    padding-bottom: 40px; /* Add some padding at the bottom */
+  }
+  
+  /* Make sure the main content area has correct spacing */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* Prevents forcing a minimum height that's too large */
+  }
+  
+  /* Fix for modal display */
+  .modal {
+    z-index: 1500; /* Ensure the modal appears above everything else */
+  }
+  
+  /* Make sure product details don't overflow */
+  .product-details {
+    padding: 15px;
+    background: var(--light-bg);
+    border-top: 1px solid #eaeaea;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  /* Improve spacing and layout of gallery items */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Additional responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .gallery-img {
+      height: 180px;
+    }
+  }
+  /* Responsive Styles for new sections */
+@media screen and (max-width: 992px) {
+    .sustainability-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sustainability-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sustainability-card,
+    .case-study-card {
+        padding: 30px 20px;
+    }
+}

@@ -29,11 +29,13 @@
                     <li><a href="sustainability.html">Sustainability</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-                    <div class="theme-toggle">
-                        <button id="themeToggle">
-                            <i class="fas fa-moon"></i>
-                        </button>
-                    </div></nav></ul>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
 
             <div class="hamburger-menu">
                 <div class="bar"></div>
@@ -42,47 +44,112 @@
             </div>
         </div>
     </header>
+    
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <!-- Main Content --><section class="gallery-section">
-    <div class="container">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/batter-1.png" alt="Vanadium Redox-Flow Battery" class="gallery-img">
-                <div class="gallery-overlay">
-                    <span>View Larger</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/installation-1.jpeg" alt="Battery Installation" class="gallery-img">
-                <div class="gallery-overlay">
-                    <span>View Larger</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/solar-intergration.jpg" alt="Solar Integration" class="gallery-img">
-                <div class="gallery-overlay">
-                    <span>View Larger</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/battery-components.ppm" alt="Battery Components" class="gallery-img">
-                <div class="gallery-overlay">
-                    <span>View Larger</span>
-                </div>
-            </div>
-        </div>
-    </div>
     
-    <!-- Modal for enlarged images -->
-    <div id="imageModal" class="modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImg">
-        <div id="modalCaption"></div>
-    </div>
-</section>
+    <!-- Wrap all main content in a div with class "main-content" -->
+    <div class="main-content">
+        <!-- Main Content -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/batter-1.png" alt="Vanadium Redox-Flow Battery" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span>View Larger</span>
+                        </div>
+                        <div class="product-details">
+                            <h3>Vanadium Redox-Flow Battery</h3>
+                            <p>Our flagship energy storage solution with extended lifecycle and stable performance.</p>
+                            <ul>
+                                <li>20+ year lifespan</li>
+                                <li>100% depth of discharge</li>
+                                <li>Scalable from 10kWh to 10MWh</li>
+                            </ul>
+                            <a href="products.html#vrfb" class="btn-details">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/installation-1.jpeg" alt="Battery Installation" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span>View Larger</span>
+                        </div>
+                        <div class="product-details">
+                            <h3>Professional Installation</h3>
+                            <p>Expert deployment and integration of energy storage systems for residential and commercial applications.</p>
+                            <ul>
+                                <li>Turnkey solutions</li>
+                                <li>Certified technicians</li>
+                                <li>Customized to your needs</li>
+                            </ul>
+                            <a href="products.html#installation" class="btn-details">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/solar-intergration.jpg" alt="Solar Integration" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span>View Larger</span>
+                        </div>
+                        <div class="product-details">
+                            <h3>Solar Integration</h3>
+                            <p>Seamless integration with existing or new solar installations for complete energy independence.</p>
+                            <ul>
+                                <li>Compatible with all major PV systems</li>
+                                <li>Maximize self-consumption</li>
+                                <li>Microgrid capability</li>
+                            </ul>
+                            <a href="products.html#solar" class="btn-details">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/battery-components.ppm" alt="Battery Components" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span>View Larger</span>
+                        </div>
+                        <div class="product-details">
+                            <h3>Battery Components</h3>
+                            <p>High-quality components engineered for maximum efficiency and durability in East African conditions.</p>
+                            <ul>
+                                <li>Heat-resistant materials</li>
+                                <li>Modular design</li>
+                                <li>Low maintenance requirements</li>
+                            </ul>
+                            <a href="products.html#components" class="btn-details">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal for enlarged images -->
+            <div id="imageModal" class="modal">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modalImg">
+                <div id="modalCaption"></div>
+            </div>
+        </section>
+    </div><!-- End of main-content -->
+    
+        <!-- Newsletter Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive the latest insights, articles, and resources.</p>
+                <form style="max-width: 500px; margin: 0 auto;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border-radius: var(--border-radius); border: none;">
+                        <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
@@ -122,7 +189,7 @@
                 </div>
             </div>
         </footer>
-    
-        <script src="js/main.js"></script>
-    </body>
-    </html>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
