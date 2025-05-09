@@ -45,6 +45,10 @@ a:hover {
     color: var(--secondary-color);
 }
 
+a:active {
+    color: var(--accent-color);
+}
+
 ul {
     list-style: none;
 }
@@ -114,8 +118,46 @@ section {
     justify-content: space-between;
 }
 
-.logo img {
+/* Logo Container and Positioning */
+.logo-container {
+    position: relative;
+    display: inline-block;
+    height: 50px; /* Explicit height to ensure hover area is correct */
+    cursor: pointer;
+}
+
+/* Static Logo Styles */
+.logo-static {
     height: 50px;
+    width: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo Video Styles */
+.logo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    display: block;
+    z-index: 2; /* Place video above static image */
+    opacity: 0;
+    visibility: hidden; /* Hide completely when not hovered */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show video and hide static image on hover */
+.logo-container:hover .logo-video {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo-container:hover .logo-static {
+    opacity: 0;
 }
 
 .main-nav ul {

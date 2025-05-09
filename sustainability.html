@@ -15,18 +15,24 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Redolyte Energy Logo">
+                <a href="index.html" class="logo-container">
+                    <!-- Static logo shown by default -->
+                    <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
+                    
+                    <!-- Video shown on hover - preload metadata for faster loading -->
+                    <video id="logo-video" muted loop playsinline class="logo-video">
+                        <source src="images/logo.mp4" type="video/mp4">
+                    </video>
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="why-vanadium.html">Why Vanadium</a></li>
                     <li><a href="market.html">Market Focus</a></li>
-                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="sustainability.html"  class="active">Sustainability</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
                     <div class="theme-toggle">
@@ -124,6 +130,10 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="why-vanadium.html">Why Vanadium</a></li>
+                        <li><a href="market.html">Market Focus</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>

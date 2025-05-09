@@ -15,13 +15,19 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Redolyte Energy Logo">
+                <a href="index.html" class="logo-container">
+                    <!-- Static logo shown by default -->
+                    <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
+                    
+                    <!-- Video shown on hover - preload metadata for faster loading -->
+                    <video id="logo-video" muted loop playsinline class="logo-video">
+                        <source src="images/logo.mp4" type="video/mp4">
+                    </video>
                 </a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="why-vanadium.html">Why Vanadium</a></li>
@@ -43,19 +49,6 @@
             </div>
         </div>
     </header>
-    <!-- Newsletter Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter to receive the latest insights, articles, and resources.</p>
-            <form style="max-width: 500px; margin: 0 auto;">
-                <div style="display: flex; gap: 10px;">
-                    <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border-radius: var(--border-radius); border: none;">
-                    <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
-                </div>
-            </form>
-        </div>
-    </section>
 
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
@@ -76,6 +69,10 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="why-vanadium.html">Why Vanadium</a></li>
+                        <li><a href="market.html">Market Focus</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -95,6 +92,19 @@
                     </div>
                 </div>
             </div>
+                <!-- Newsletter Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive the latest insights, articles, and resources.</p>
+            <form style="max-width: 500px; margin: 0 auto;">
+                <div style="display: flex; gap: 10px;">
+                    <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border-radius: var(--border-radius); border: none;">
+                    <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
             <div class="footer-bottom">
                 <p>&copy; 2025 Redolyte Energy. All Rights Reserved.</p>
             </div>
