@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redolyte Energy - Sustainable Energy Storage for East Africa</title>
+    <meta name="description" content="Empowering East Africa with sustainable vanadium redox-flow battery technology for reliable energy storage solutions.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" sizes="15x20" href="images/logo.png" type="image/png">
+    <link rel="icon" sizes="32x40" href="images/logo.png" type="image/png">
+    <link rel="icon" sizes="48x55" href="images/logo.png" type="image/png">
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Modified Logo HTML for Header -->
+            <div class="logo">
+                <a href="index.html" class="logo-container">
+                    <!-- Static logo shown by default -->
+                    <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
+                    
+                    <!-- Video shown on hover - preload metadata for faster loading -->
+                    <video id="logo-video" muted loop playsinline class="logo-video">
+                        <source src="images/logo.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"  class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="why-vanadium.html">Why Vanadium</a></li>
+                    <li><a href="market.html">Market Focus</a></li>
+                    <li><a href="sustainability.html">Sustainability</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+                    <div class="theme-toggle">
+                        <button id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </ul>
+
+</div>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <!-- blog-view.html -->
+<h1 id="blog-title"></h1>
+<p id="blog-content"></p>
+
+<script>
+  const blogData = {
+    1: {
+      title: "Winds of Change",
+      content: "Full article content about renewable energy in East Africa..."
+    },
+    2: {
+      title: "Solar Boom in Africa",
+      content: "Exploring the potential of solar technology on the continent..."
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const postId = params.get("postId");
+
+  if (blogData[postId]) {
+    document.getElementById("blog-title").innerText = blogData[postId].title;
+    document.getElementById("blog-content").innerText = blogData[postId].content;
+  } else {
+    document.getElementById("blog-title").innerText = "Blog not found";
+    document.getElementById("blog-content").innerText = "Sorry, the blog you're looking for doesn't exist.";
+  }
+</script>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Redolyte Energy Logo">
+                        <p>Empowering East Africa with Sustainable Energy Storage</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="why-vanadium.html">Why Vanadium</a></li>
+                            <li><a href="market.html">Market Focus</a></li>
+                            <li><a href="sustainability.html">Sustainability</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@redolyteenergy.com">info@redolyteenergy.com</a></p>
+                        <p><i class="fas fa-phone"></i> [Phone placeholder]</p>
+                        <p><i class="fas fa-map-marker-alt"></i> [Address placeholder]</p>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Newsletter Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive the latest insights, articles, and resources.</p>
+                <form style="max-width: 500px; margin: 0 auto;">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px; border-radius: var(--border-radius); border: none;">
+                        <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Redolyte Energy. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="js/main.js"></script>
+    </body>
+    </html>
