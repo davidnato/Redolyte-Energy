@@ -1251,3 +1251,5 @@ body.dark-mode .comparison-table .category {
 body.dark-mode .comparison-table .category i {
     color: var(--dark-primary-color);
 }
+
+#more {display: none;}
