@@ -356,3 +356,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Check on scroll
             window.addEventListener('scroll', animateOnScroll);
         });
+
+        // Preload the GIF for smoother transition
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverLogo = new Image();
+    hoverLogo.src = 'images/logo-anim.gif';
+});

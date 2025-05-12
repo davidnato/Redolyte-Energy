@@ -16,44 +16,41 @@
 </head>
 <body>
     <!-- Header Section -->
-        <!-- Header Section -->
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html" class="logo-container">
-                        <!-- Static logo shown by default -->
-                        <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
-                        
-                        <!-- Video shown on hover - preload metadata for faster loading -->
-                        <video id="logo-video" muted loop playsinline class="logo-video">
-                            <source src="images/logo.mp4" type="video/mp4">
-                        </video>
-                    </a>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html" class="logo-container">
+                <!-- Static logo shown by default -->
+                <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
+                
+                <!-- GIF animation shown on hover -->
+                <img src="images/logo-anim.gif" alt="Redolyte Energy Logo Animation" class="logo-video" style="display: none;">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="why-vanadium.html">Why Vanadium</a></li>
+                <li><a href="market.html">Market Focus</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+                <div class="theme-toggle">
+                    <button id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="why-vanadium.html">Why Vanadium</a></li>
-                        <li><a href="market.html">Market Focus</a></li>
-                        <li><a href="sustainability.html">Sustainability</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-                        <div class="theme-toggle">
-                            <button id="themeToggle">
-                                <i class="fas fa-moon"></i>
-                            </button>
-                        </div>
-                    </ul>
-                </nav>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </header>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero">

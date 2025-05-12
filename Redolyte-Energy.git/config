@@ -6,6 +6,4 @@
 	ignorecase = true
 [remote "origin"]
 	url = https://github.com/davidnato/Redolyte-Energy.git
-	tagOpt = --no-tags
-	fetch = +refs/*:refs/*
-	mirror = true
+	fetch = +refs/heads/*:refs/remotes/origin/*
