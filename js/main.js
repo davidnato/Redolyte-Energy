@@ -392,3 +392,30 @@ document.querySelectorAll('.read-more').forEach(button => {
 function closeModal() {
   document.getElementById('blogModal').style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const productCards = document.querySelectorAll('.product-card');
+    
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Get selected category
+            const selectedCategory = button.getAttribute('data-category');
+            
+            // Filter products
+            productCards.forEach(card => {
+                if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});

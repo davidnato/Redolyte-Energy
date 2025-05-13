@@ -58,75 +58,159 @@
         <i class="fas fa-arrow-up"></i>
     </button>
     
-    <!-- Wrap all main content in a div with class "main-content" -->
-    <div class="main-content">
-        <!-- Main Content -->
-        <section class="gallery-section">
-            <div class="container">
-                <h2>Gallery</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/batter-1.png" alt="Vanadium Redox-Flow Battery" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <span>View Larger</span>
+<!-- Product Details Section -->
+<section id="products" class="product-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Advanced Battery Solutions</h2>
+            <p>Cutting-edge technology designed for performance, reliability, and sustainability</p>
+        </div>
+
+        <div class="product-categories">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="industrial">Industrial</button>
+            <button class="category-btn" data-category="residential">Residential</button>
+            <button class="category-btn" data-category="portable">Portable</button>
+        </div>
+
+        <div class="products-container">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="industrial">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/300" alt="RedoMax Industrial Battery System">
+                </div>
+                <div class="product-info">
+                    <h3>RedoMax Industrial Series</h3>
+                    <p class="product-subtitle">High-capacity energy storage for commercial applications</p>
+                    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-value">100-500 kWh</span>
                         </div>
-                        <div class="product-details">
-                            <h3>Vanadium Redox-Flow Battery</h3>
-                            <p>Our flagship energy storage solution with extended lifecycle and stable performance.</p>
-                            <ul>
-                                <li>20+ year lifespan</li>
-                                <li>100% depth of discharge</li>
-                                <li>Scalable from 10kWh to 10MWh</li>
-                            </ul>
+                        <div class="spec-item">
+                            <span class="spec-label">Cycle Life:</span>
+                            <span class="spec-value">10,000+ cycles</span>
                         </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/installation-1.jpeg" alt="Battery Installation" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <span>View Larger</span>
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency Rate:</span>
+                            <span class="spec-value">97%</span>
                         </div>
-                        <div class="product-details">
-                            <h3>Professional Installation</h3>
-                            <p>Expert deployment and integration of energy storage systems for residential and commercial applications.</p>
-                            <ul>
-                                <li>Turnkey solutions</li>
-                                <li>Certified technicians</li>
-                                <li>Customized to your needs</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/solar-intergration.jpg" alt="Solar Integration" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <span>View Larger</span>
-                        </div>
-                        <div class="product-details">
-                            <h3>Solar Integration</h3>
-                            <p>Seamless integration with existing or new solar installations for complete energy independence.</p>
-                            <ul>
-                                <li>Compatible with all major PV systems</li>
-                                <li>Maximize self-consumption</li>
-                                <li>Microgrid capability</li>
-                            </ul>
+                        <div class="spec-item">
+                            <span class="spec-label">Operating Temp:</span>
+                            <span class="spec-value">-20°C to 60°C</span>
                         </div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/battery-components.ppm" alt="Battery Components" class="gallery-img">
-                        <div class="gallery-overlay">
-                            <span>View Larger</span>
-                        </div>
-                        <div class="product-details">
-                            <h3>Battery Components</h3>
-                            <p>High-quality components engineered for maximum efficiency and durability in East African conditions.</p>
-                            <ul>
-                                <li>Heat-resistant materials</li>
-                                <li>Modular design</li>
-                                <li>Low maintenance requirements</li>
-                            </ul>
-                        </div>
+                    
+                    <div class="product-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Advanced thermal management system</li>
+                            <li>Remote monitoring capabilities</li>
+                            <li>Scalable modular design</li>
+                            <li>Integrated fire suppression</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="#contact" class="btn btn-primary">Request Quote</a>
+                        <a href="#" class="btn btn-secondary">Download Spec Sheet</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="residential">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/300" alt="RedoHome Residential Battery">
+                </div>
+                <div class="product-info">
+                    <h3>RedoHome Energy Storage</h3>
+                    <p class="product-subtitle">Reliable backup power for residential applications</p>
+                    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-value">10-30 kWh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cycle Life:</span>
+                            <span class="spec-value">8,000+ cycles</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency Rate:</span>
+                            <span class="spec-value">96%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions:</span>
+                            <span class="spec-value">120 x 30 x 90 cm</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Seamless grid integration</li>
+                            <li>Solar compatibility</li>
+                            <li>Smart home app control</li>
+                            <li>Indoor/outdoor installation options</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="#contact" class="btn btn-primary">Request Quote</a>
+                        <a href="#" class="btn btn-secondary">Download Spec Sheet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card" data-category="portable">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/300" alt="RedoGo Portable Power Station">
+                </div>
+                <div class="product-info">
+                    <h3>RedoGo Portable Power Station</h3>
+                    <p class="product-subtitle">Compact energy solution for on-the-go applications</p>
+                    
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity:</span>
+                            <span class="spec-value">1-5 kWh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Weight:</span>
+                            <span class="spec-value">15-35 kg</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Charging Time:</span>
+                            <span class="spec-value">2-4 hours</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Output Ports:</span>
+                            <span class="spec-value">AC, USB, DC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Rugged, weatherproof design</li>
+                            <li>Multiple charging options</li>
+                            <li>LCD status display</li>
+                            <li>Peak surge protection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="#contact" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-secondary">Download Spec Sheet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
             
             <!-- Modal for enlarged images -->
             <div id="imageModal" class="modal">
