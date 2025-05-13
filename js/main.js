@@ -378,3 +378,17 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', function () {
+    const blogPost = this.closest('.blog-post');
+    const fullContent = blogPost.querySelector('.full-content').innerHTML;
+
+    document.getElementById('modalBody').innerHTML = fullContent;
+    document.getElementById('blogModal').style.display = 'block';
+  });
+});
+
+function closeModal() {
+  document.getElementById('blogModal').style.display = 'none';
+}
