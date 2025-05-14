@@ -118,21 +118,39 @@ section {
     justify-content: space-between;
 }
 
-/* Logo Container and Positioning */
 .logo-container {
     position: relative;
     display: inline-block;
-    height: 50px; /* Explicit height to ensure hover area is correct */
-    cursor: pointer;
+    width: auto;
+    height: auto;
+    /* Define the size you want for your logo area */
+    max-width: 150px; /* Adjust this value to your desired width */
 }
 
-/* Static Logo Styles */
 .logo-static {
-    height: 50px;
-    width: auto;
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.3s ease;
-    position: relative;
+}
+
+.logo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Will respect the parent container's max-width */
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    object-fit: contain; /* Maintains aspect ratio without stretching */
+}
+
+.logo-container:hover .logo-static {
+    opacity: 0;
+}
+
+.logo-container:hover .logo-video {
+    opacity: 1;
 }
 
 

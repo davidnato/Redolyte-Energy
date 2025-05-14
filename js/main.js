@@ -419,3 +419,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logoContainer = document.querySelector('.logo-container');
+    const logoVideo = document.getElementById('logo-video');
+    
+    logoContainer.addEventListener('mouseenter', function() {
+        logoVideo.play();
+    });
+    
+    logoContainer.addEventListener('mouseleave', function() {
+        // Optional: pause and reset the video when not hovering
+        // logoVideo.pause();
+        // logoVideo.currentTime = 0;
+    });
+});
