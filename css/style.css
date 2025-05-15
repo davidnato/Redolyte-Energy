@@ -199,7 +199,7 @@ section {
 
 .hero {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; /* Reduced from 100vh to avoid excessive height */
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -213,7 +213,8 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Changed from cover to contain to prevent zooming */
+    object-position: center; /* Centers the image */
     z-index: 1;
 }
 
@@ -223,30 +224,39 @@ section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
     padding: 60px;
     max-width: 60%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     border-radius: 0 20px 20px 0;
-    backdrop-filter: blur(1px);
-    margin-top: 2em;
+    backdrop-filter: blur(2px);
+    margin-top: 0; /* Removed margin-top for better alignment */
 }
 
 .hero-content {
     color: white;
+    max-width: 90%; /* Ensures content doesn't stretch too wide */
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .mission-statement {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Responsive font size */
     margin-bottom: 30px;
     line-height: 1.6;
 }
 
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .cta-buttons .btn {
-    margin-right: 15px;
+    margin-right: 0; /* Removed fixed margin, using gap instead */
 }
 
 .btn-primary {
@@ -255,6 +265,11 @@ section {
     padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d62836;
 }
 
 .btn-secondary {
@@ -264,9 +279,12 @@ section {
     padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
 /* Key Features Section */
 .key-features {
@@ -1676,3 +1694,23 @@ body.dark-mode .comparison-table .category i {
 .btn-secondary:hover {
     background-color: #dee2e6;
 }
+
+/* Added styles for the image */
+    .story-image-container {
+        margin: 20px 0 30px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .story-image {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .image-caption {
+        font-size: 14px;
+        color: #666;
+        margin-top: 10px;
+        font-style: italic;
+    }

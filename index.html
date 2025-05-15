@@ -20,11 +20,16 @@
 <header class="header">
     <div class="container">
         <div class="logo">
-            <a href="index.html" class="logo-container">
-                <!-- Static logo shown by default -->
-                <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
-            </a>
-        </div>
+                <a href="index.html" class="logo-container">
+                    <!-- Static logo shown by default -->
+                    <img src="images/logo.png" alt="Redolyte Energy Logo" class="logo-static">
+                    
+                    <!-- Video shown on hover - preload metadata for faster loading -->
+                    <video id="logo-video" muted loop playsinline class="logo-video">
+                        <source src="images/logo.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -52,7 +57,7 @@
 
 <section class="hero">
     <div class="hero-background">
-        <img src="images/energy-storage-hero.jpg" alt="Energy Storage Hero Image">
+        <img src="images/home page background.png" alt="Energy Storage Hero Image">
     </div>
     <div class="hero-overlay">
         <div class="hero-content">
