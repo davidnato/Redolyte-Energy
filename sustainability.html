@@ -53,18 +53,31 @@
         </div>
     </header>
 <!-- New Sustainability and Impact Section -->
-<section class="sustainability-section animate-on-scroll" id="sustainability">
-    <div class="container">
+<section class="sustainability-section animate-on-scroll" id="sustainability" style="position: relative; overflow: hidden;">
+    <!-- Background image with overlay -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: url('images/sustainability-bg.png') center center/cover no-repeat;
+        z-index: 0;
+    "></div>
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1;
+    "></div>
+    <div class="container" style="position: relative; z-index: 2;">
         <h2 class="section-title">Sustainability & Impact</h2>
         <div class="sustainability-grid">
-            <div class="sustainability-card animate-on-scroll delay-100">
+            <div class="sustainability-card animate-on-scroll delay-100" style="background: rgba(255,255,255,0.85); backdrop-filter: blur(2px);">
                 <div class="card-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
                 <h3>Environmental Contribution</h3>
                 <p>Redolyte Energy reduces carbon emissions, promotes renewable energy adoption, and uses recyclable materials to minimize environmental impact.</p>
             </div>
-            <div class="sustainability-card animate-on-scroll delay-200">
+            <div class="sustainability-card animate-on-scroll delay-200" style="background: rgba(255,255,255,0.85); backdrop-filter: blur(2px);">
                 <div class="card-icon">
                     <i class="fas fa-chart-line"></i>
                 </div>
@@ -74,7 +87,7 @@
                     <li>Elimination of battery disposal costs due to recyclable electrolytes</li>
                 </ul>
             </div>
-            <div class="sustainability-card animate-on-scroll delay-300">
+            <div class="sustainability-card animate-on-scroll delay-300" style="background: rgba(255,255,255,0.85); backdrop-filter: blur(2px);">
                 <div class="card-icon">
                     <i class="fas fa-users"></i>
                 </div>
