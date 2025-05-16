@@ -235,6 +235,7 @@ section {
 
 .hero-content {
     color: white;
+    text-align: left;
     max-width: 90%; /* Ensures content doesn't stretch too wide */
 }
 
