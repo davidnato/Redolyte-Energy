@@ -434,3 +434,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // logoVideo.currentTime = 0;
     });
 });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.pageYOffset;
+            // Adjust the divisor to control the parallax speed (higher = slower)
+            const parallaxOffset = scrollPosition / 2;
+            
+            // Apply the transform to create parallax effect
+            parallaxBg.style.transform = `translateY(${parallaxOffset}px)`;
+        });
+    });
