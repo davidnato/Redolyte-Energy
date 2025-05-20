@@ -112,21 +112,45 @@
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-<section class="story-section">
-    <section class="hero">
-        <div class="hero-background parallax-bg">
-            <img src="images/about us.jpg" alt="About Us Hero Image">
-        </div>
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>About Us</h1>
-                <p class="mission-statement">
-                    To revolutionize energy storage in East Africa by delivering reliable, eco-friendly vanadium redox-flow batteries that bridge the gap between renewable energy potential and sustainable development.
-                </p>
+<section class="hero">
+    <div class="hero-background parallax-bg">
+        <img src="images/about us.jpg" alt="Energy Storage Hero Image">
+    </div>
+    <div class="hero-overlay">
+        <div class="hero-content" style="text-align: left;">
+            <h1>Why Choose
+                <br>
+                Redolyte Energy?</h1>
+                <ul style="list-style: disc;">
+                    <li>Locally assembled in Kenya for East African conditions</li>
+                    <li>Support for off-grid and rural electrification projects</li>
+                    <li>Fully recyclable electrolyte, eliminating disposal costs</li>
+                    <li>Ideal solution for grid instability and frequent power outages</li>
+                    <li>Customizable energy storage solutions for diverse applications</li>
+                </ul>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="why-vanadium.html" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
-    </section>
+    </div>
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.pageYOffset;
+            // Adjust the divisor to control the parallax speed (higher = slower)
+            const parallaxOffset = scrollPosition / 2;
+            
+            // Apply the transform to create parallax effect
+            parallaxBg.style.transform = `translateY(${parallaxOffset}px)`;
+        });
+    });
+</script>
+    <section class="about-section">
+        <div class="container">
                 <h2>Our Story</h2>
                 <p>East Africa's energy revolution is underway, but unreliable storage solutions hinder progress. At Redolyte Energy, we're introducing cutting-edge vanadium redox-flow batteries—a technology trusted globally—to empower homes, businesses, and communities. By addressing the region's unique challenges, from grid instability to rural electrification, we're building a future where clean energy is accessible, affordable, and dependable.</p>
                 <div class="mission-vision-container">
@@ -178,7 +202,7 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@redolyteenergy.com">info@redolyteenergy.com</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@redolyte.com">info@redolyte.com</a></p>
                     <p><i class="fas fa-phone"></i> [Phone placeholder]</p>
                     <p><i class="fas fa-map-marker-alt"></i> [Address placeholder]</p>
                 </div>
