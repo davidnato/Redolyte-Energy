@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Redolyte | We'll Be Back Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: blanchedalmond;
+        }
+        .maintenance-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: rgb(128, 65, 65);
+            text-align: center;
+            padding: 0 2rem;
+        }
+        .maintenance-message {
+            max-width: 600px;
+        }
+        .maintenance-message h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .maintenance-message p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: var(--light-bg);
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="maintenance-hero">
+        <div class="maintenance-message">
+            <h1>🚧 We're Working on the Website</h1>
+            <p>Our team is currently improving your experience. We’ll be back online shortly. Thank you for your patience!</p>
+            <a href="/" class="btn btn-primary">Return to Homepage</a>
+        </div>
+    </section>
+
+</body>
+</html>

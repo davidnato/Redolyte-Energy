@@ -447,3 +447,4 @@ document.addEventListener('DOMContentLoaded', function() {
             parallaxBg.style.transform = `translateY(${parallaxOffset}px)`;
         });
     });
+
